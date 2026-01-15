@@ -18,7 +18,7 @@ jobs:
         browser: [chrome, firefox]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v4
 
       - name: Setup node
         uses: actions/setup-node@v3.6.0
@@ -34,7 +34,7 @@ jobs:
           npm install
 
       - name: Cache Cypress binary
-        uses: actions/cache@v2
+        uses: actions/cache@v5
         with:
           path: |
             ~/.cache/Cypress
@@ -50,7 +50,7 @@ jobs:
           npx cypress run --browser ${{matrix.browser}}
 
       - name: Screenshot Upload
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: cypress-screenshots
