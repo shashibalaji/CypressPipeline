@@ -3,5 +3,5 @@
   "channels": {
     "team": "URL"
   },
-  "node-version": "16.x"
+  "node-version": "22.x"
 }

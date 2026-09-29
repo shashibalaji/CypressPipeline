@@ -1,8 +1,8 @@
 {
-    "name": "canberk-udemy-cypresse",
+    "name": "cypress-pipeline",
     "version": "1.0.0",
-    "description": "Cypress run",
-    "repository": "Cypress Udemy",
+    "description": "Cypress + TypeScript tests run through a parameterised GitHub Actions workflow",
+    "repository": "https://github.com/shashibalaji/CypressPipeline",
     "main": "index.js",
     "scripts": {
         "cypress:runTest": "cypress run",
@@ -10,11 +10,11 @@
     },
     "license": "UNLICENSED",
     "dependencies": {
-        "fs-extra": "11.1.0",
-        "typescript": "4.9.4"
+        "fs-extra": "^11.4.1"
     },
     "devDependencies": {
-        "@types/node": "^18.14.0",
-        "cypress": "^12.5.0"
+        "@types/node": "^22.0.0",
+        "cypress": "^16.1.0",
+        "typescript": "^5.9.0"
     }
 }

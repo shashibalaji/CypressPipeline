@@ -6,6 +6,6 @@ describe('User', () => {
 
     it('should be able to open automation category', () => {
         cy.visit('/category/test-automation/');
-        cy.title().should('eq', 'Automation');
+        cy.title().should('eq', 'Test Automation Archives');
     });
 });
